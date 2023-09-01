@@ -1,0 +1,9 @@
+structure of our app
+
+- Head
+- body
+  ** Sidebar \*** menu items
+  ** main container \*** button list
+  **\* video container
+  \*\*** video card
+  
