@@ -95,18 +95,19 @@ const Comment = ({ data }) => {
 };
 
 const CommentList = ({ comments }) => {
+  console.log(comments);
   return (
     <div>
-      {comments.map((x, index) => {
-        return (
+      {comments.map((comment, index) => (
+        
           <div>
-            <Comment data={x} key={index} />
+            <Comment data={comment} key={index} />
             <div className="pl-5 border border-l-black ml-5">
-              <CommentList comments={x.replies} />
+              <CommentList comments={comment.replies} />
             </div>
           </div>
-        );
-      })}
+        
+      ))}
     </div>
   );
 };
@@ -116,7 +117,7 @@ const CommentsContainer = () => {
     <div>
       <div className="m-5 p-2">
         <h1 className="text-2xl font-bold">Comments</h1>
-        <Comment data={CommentData[0]} />
+        <CommentList comments={CommentData} />
       </div>
     </div>
   );
