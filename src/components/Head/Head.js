@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../assets/images/youtubeLongLogo.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { toggleMenu } from "../../utils/appSlice";
+import { toggleMenu } from "../../utils/Slices/appSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { YOUTUBE_SEARCH_API } from "../../utils/constants";
-import { cacheResults } from "../../utils/searchSlice";
+import { cacheResults } from "../../utils/Slices/searchSlice";
 
 const Head = () => {
   const dispatch = useDispatch();
