@@ -95,7 +95,6 @@ const Comment = ({ data }) => {
 };
 
 const CommentList = ({ comments }) => {
-  console.log(comments);
   return (
     <div>
       {comments.map((comment, index) => (

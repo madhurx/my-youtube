@@ -1,6 +1,6 @@
 import React from 'react'
-import ButtonList from './MainContainer/ButtonList'
-import VideoContainer from './MainContainer/VideoContainer'
+import ButtonList from './ButtonList'
+import VideoContainer from './VideoContainer'
 
 const MainContainer = () => {
   return (

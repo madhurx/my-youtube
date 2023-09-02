@@ -10,8 +10,8 @@ const VideoCard = ({ info }) => {
         <img alt="thumbnail" src={thumbnails.maxres?.url} className="rounded-xl"/>
         <ul>
           <li>{title}</li>
-          <li>{channelTitle}</li>
-          <li>{statistics.viewCount} views</li>
+          <li className="text-sm font-semibold">{channelTitle}</li>
+          <li className="text-sm">{(statistics.viewCount).toLocaleString()} views</li>
         </ul>
       </div>
     </div>
